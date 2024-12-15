@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Tanese</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Tanese</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="phone-nav">
+        <div class="logo">Tanese</div>
+        <div class="phone-menu">
+            <div class="phone-icon" onclick="toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggle()">About</a></li>
+                <li><a href="#experience" onclick="toggle()">Experience</a></li>
+                <li><a href="#projects" onclick="toggle()">Projects</a></li>
+                <li><a href="#contact" onclick="toggle()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/tanese.png" alt="tanese pfp">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Tanese</h1>
+            <p class="section_text_p2">Frontend & Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/github.png" alt="github" class="icon" onclick="window.open('https://github.com/Luis-Tanese')">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="window.open('https://www.linkedin.com/in/luis-tanese-78b592338/')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/tanese2.png" alt="tanese2 pfp" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 year <br>Frontend & Backend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Second Year <br>Highschool</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae aspernatur dolore atque consequuntur eius tempore! Deserunt amet laborum quibusdam facere ad itaque minus a cupiditate nobis sequi dolor, voluptatibus delectus.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Express.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse Some of My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/dateTan.png" alt="dateTan.js" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">dateTan.js</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/dateTan.js')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://www.npmjs.com/package/datetan')">
+                            NPM Package
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/JSWE.png" alt="JSWE" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">JavaScript Web Editor</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/JS-Web-Code-Editor')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://javascript-editor.netlify.app')">
+                            Live Preview
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/QR-GEN.png" alt="QR-GEN" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">QR Code Generator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/QR-Code-Generator', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://silly-qr-generator.vercel.app/', '_blank')">
+                            Live Preview
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:luistanese@gmail.com">luistanese@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/discord.png" alt="discord icon" class="icon contact-icon">
+                <p><a href="https://discord.com/users/728260260674011146" target="_blank">Discord</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/luis-tanese-78b592338/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Tanese. All Rights Reserved</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
