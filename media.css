@@ -1,115 +1,250 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-
-    .about-containers {
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-
-    #phone-nav {
-        display: flex;
-    }
-
-    #experience, .experience-details-container {
-        margin-top: 2rem;
-    }
-
-    #profile, .section-container {
-        display: block;
-    }
-
-    .arrow {
-        display: none;
-    }
-
-    section, .section-container {
-        height: fit-content;
-    }
-    
-    section {
-        margin: 0 5%;
-    }
-    
-    .section_pi-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-
-    .about-containers {
-        margin-top: 0;
+    .container {
+        width: 95%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
     }
 
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
-    article {
-        font-size: 1rem;
+    .skill-item {
+        padding: 1rem;
     }
 
-    footer {
-       height: fit-content;
-       margin-bottom: 2rem; 
+    .skill-item img {
+        width: 40px;
+        height: 40px;
     }
+}
 
-    .about-containers, .contact-info-upper-container, .btn-container {
-        flex-wrap: wrap;
-    }
-
-    .contact-info-container {
-        margin: 0;
-    }
-
-    .contact-info-container p, .nav-links li a {
-        font-size: 1rem;
-    }
-
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
     }
 
     .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -30%;
+        width: 30%;
+        height: auto;
+        max-height: 300px;
+        background-color: var(--card-bg);
+        border-radius: 10px 0 0 10px;
         flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-        margin-bottom: 6vh;
+        align-items: flex-start;
+        padding: 1.2rem;
+        gap: 0.8rem;
+        transition: all 0.3s ease;
+        z-index: 999;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
     }
 
-    .section_pic-container {
-        width: auto;
-        height: 46vh;
+    .nav-links.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        display: block;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .nav-links li a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: var(--accent-color);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    #hero {
+        padding-top: 6rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image img {
+        width: 60%;
+        max-width: 250px;
+    }
+
+    .cta-buttons,
+    .social-icons {
         justify-content: center;
     }
 
-    .section_text_p2 {
-        font-size: 1.25rem;
+    .about-content {
+        flex-direction: column;
     }
 
-    .title {
+    .about-image {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-cards {
+        flex-direction: column;
+    }
+
+    .skills-category {
+        padding: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 0.8rem;
+    }
+
+    .skill-item img {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-item h4 {
+        font-size: 0.8rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        width: 40%;
+        right: -40%;
+        min-width: 180px;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header h2 {
         font-size: 2rem;
-    }
-
-    .text-container {
-        text-align: justify;
     }
 }

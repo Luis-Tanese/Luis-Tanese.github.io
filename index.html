@@ -1,284 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./assets/tanese.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <title>Tanese</title>
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Tanese</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="phone-nav">
-        <div class="logo">Tanese</div>
-        <div class="phone-menu">
-            <div class="phone-icon" onclick="toggle()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggle()">About</a></li>
-                <li><a href="#experience" onclick="toggle()">Experience</a></li>
-                <li><a href="#projects" onclick="toggle()">Projects</a></li>
-                <li><a href="#contact" onclick="toggle()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/tanese.png" alt="tanese pfp">
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Luis Tanese</h1>
-            <p class="section_text_p2">Fullstack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/github.png" alt="github" class="icon" onclick="window.open('https://github.com/Luis-Tanese')">
-                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="window.open('https://www.linkedin.com/in/luis-tanese-78b592338/')">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section_text_p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/tanese2.png" alt="tanese2 pfp" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2 years <br>Fullstack Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Third Year <br>Highschool</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I am just a silly little programmer that likes making projects with free time. Currently mastering C# and planning to learn TypeScript.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Blazor</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Node.js</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>.NET</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Express.js</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>REDIS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Firebase</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section_text_p1">Browse Some of My</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/OPC.png" alt="Osu Profile Cards" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Osu Cards</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/osu-profile-stats', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://osu-profile-stats.vercel.app', '_blank')">
-                            Live Preview
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dateTan.png" alt="dateTan.js" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">dateTan.js</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/dateTan.js')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://www.npmjs.com/package/datetan')">
-                            NPM Package
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/JSWE.png" alt="JSWE" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">JavaScript Web Editor</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Luis-Tanese/JS-Web-Code-Editor')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://javascript-editor.netlify.app')">
-                            Live Preview
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
-                <p><a href="mailto:luis@tanese.com">luis@tanese.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/discord.png" alt="discord icon" class="icon contact-icon">
-                <p><a href="https://discord.com/users/728260260674011146" target="_blank">Discord</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/luis-tanese-78b592338/" target="_blank">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="./assets/tanese.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="media.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Luis Tanese</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">LT</div>
+            <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Luis Tanese</h1>
+                        <h2>Fullstack Developer</h2>
+                        <p>Building digital experiences with code</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary-btn"
+                                >Get in Touch</a
+                            >
+                            <a href="#projects" class="btn secondary-btn"
+                                >View Projects</a
+                            >
+                        </div>
+                        <div class="social-icons">
+                            <a
+                                href="https://github.com/Luis-Tanese"
+                                target="_blank"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/luis-tanese-78b592338/"
+                                target="_blank"
+                                ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/tanese.png" alt="Luis Tanese" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="./assets/tanese2.png" alt="Luis Tanese" />
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                I am just a silly little programmer that likes
+                                making projects with free time. Currently
+                                mastering C# and planning to learn TypeScript.
+                            </p>
+                            <div class="about-cards">
+                                <div class="card">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h3>Experience</h3>
+                                    <p>2 years<br />Fullstack Development</p>
+                                </div>
+                                <div class="card">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h3>Education</h3>
+                                    <p>Third Year<br />Highschool</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Skills</h2>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="skills-container">
+                        <div class="skills-category">
+                            <h3>Frontend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/html5.svg"
+                                        alt="HTML5"
+                                    />
+                                    <h4>HTML5</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/css3.svg"
+                                        alt="CSS3"
+                                    />
+                                    <h4>CSS3</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/javascript.svg"
+                                        alt="JavaScript"
+                                    />
+                                    <h4>JavaScript</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/blazor.svg"
+                                        alt="Blazor"
+                                    />
+                                    <h4>Blazor</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/react.svg"
+                                        alt="React"
+                                    />
+                                    <h4>React</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/sass.svg"
+                                        alt="Sass"
+                                    />
+                                    <h4>Sass</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/bootstrap.svg"
+                                        alt="Bootstrap"
+                                    />
+                                    <h4>Bootstrap</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h3>Backend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/dotnetcore.svg"
+                                        alt=".NET Core"
+                                    />
+                                    <h4>.NET Core</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/nodejs.svg"
+                                        alt="Node.js"
+                                    />
+                                    <h4>Node.js</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/express.svg"
+                                        alt="Express"
+                                    />
+                                    <h4>Express</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/axios.svg"
+                                        alt="axios"
+                                    />
+                                    <h4>Axios</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/socketio.svg"
+                                        alt="Socketio"
+                                    />
+                                    <h4>Socket.io</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/mongodb.svg"
+                                        alt="MongoDB"
+                                    />
+                                    <h4>MongoDB</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/mysql.svg"
+                                        alt="MySQL"
+                                    />
+                                    <h4>MySQL</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/postgresql.svg"
+                                        alt="PostgreSQL"
+                                    />
+                                    <h4>PostgreSQL</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/redis.svg"
+                                        alt="Redis"
+                                    />
+                                    <h4>Redis</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h3>Tools</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/git.svg"
+                                        alt="Git"
+                                    />
+                                    <h4>Git</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/figma.svg"
+                                        alt="Figma"
+                                    />
+                                    <h4>Figma</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/nuget.svg"
+                                        alt="nuget"
+                                    />
+                                    <h4>Nuget</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/vscode.svg"
+                                        alt="VS Code"
+                                    />
+                                    <h4>VS Code</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/visualstudio.svg"
+                                        alt="Visual Studio"
+                                    />
+                                    <h4>Visual Studio</h4>
+                                </div>
+                                <div class="skill-item">
+                                    <img
+                                        src="./assets/icons/intellij.svg"
+                                        alt="IntelliJ IDEA"
+                                    />
+                                    <h4>IntelliJ IDEA</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Projects</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="./assets/OPC.png"
+                                    alt="Osu Profile Cards"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h3>Osu Cards</h3>
+                                <p>
+                                    A web application for generating profile
+                                    cards for Osu players.
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/Luis-Tanese/osu-profile-stats"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        href="https://osu-profile-stats.vercel.app"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="./assets/dateTan.png"
+                                    alt="dateTan.js"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h3>dateTan.js</h3>
+                                <p>
+                                    A JavaScript date manipulation library
+                                    published as an NPM package.
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/Luis-Tanese/dateTan.js"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        href="https://www.npmjs.com/package/datetan"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >NPM Package</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="./assets/JSWE.png"
+                                    alt="JavaScript Web Editor"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h3>JavaScript Web Editor</h3>
+                                <p>
+                                    An online code editor for JavaScript
+                                    development.
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/Luis-Tanese/JS-Web-Code-Editor"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        href="https://javascript-editor.netlify.app"
+                                        target="_blank"
+                                        class="btn project-btn"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Get In Touch</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email</h3>
+                                <a href="mailto:luis@tanese.com"
+                                    >luis@tanese.com</a
+                                >
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-discord"></i>
+                                <h3>Discord</h3>
+                                <a
+                                    href="https://discord.com/users/728260260674011146"
+                                    target="_blank"
+                                    >Connect on Discord</a
+                                >
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <h3>LinkedIn</h3>
+                                <a
+                                    href="https://www.linkedin.com/in/luis-tanese-78b592338/"
+                                    target="_blank"
+                                    >Connect on LinkedIn</a
+                                >
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        placeholder="Your Name"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="Your Email"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <textarea
+                                        id="message"
+                                        placeholder="Your Message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn primary-btn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h3>Luis Tanese</h3>
+                        <p>Fullstack Developer</p>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://github.com/Luis-Tanese" target="_blank"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/luis-tanese-78b592338/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright &copy; 2025 Tanese. All Rights Reserved</p>
+                </div>
             </div>
-        </nav>
-        <p>Copyright &#169; 2025 Tanese. All Rights Reserved</p>
-    </footer>
-</body>
-<script src="script.js"></script>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
